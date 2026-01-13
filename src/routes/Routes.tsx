@@ -18,6 +18,19 @@ import Cart from "@/pages/Cart";
 import OrderSuccess from "../pages/OrderSuccess";
 import OrderFailed from "../pages/OrderFailed";
 
+function PrivateRoute({ children }: { children: React.ReactNode }) {
+  const { user, loading } = useAuth();
+
+  if (loading) {
+    return <div>Loading...</div>;
+  }
+
+  if (!user) {
+    return <Navigate to="/signin" />;
+  }
+
+  return <>{children}</>;
+}
 
 export const router = createBrowserRouter([
   {
