@@ -1,4 +1,4 @@
-import { CreateContext, useEffect, useState, ReactNode } from "react";
+import { createContext, useEffect, useState, ReactNode } from "react";
 
 import { signIn, signUp } from "../lib/auth";
 import { User } from "@/types";

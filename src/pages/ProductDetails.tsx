@@ -28,9 +28,9 @@ import {
   FaExclamationTriangle,
 } from "react-icons/fa";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { LoadingOverlay } from "@/components/ui/loading-overlay";
 import { PageLoading } from "@/components/ui/page-loading";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
+import { LoadingOverlay } from "@/components/ui/loading-Overlay";
 
 const ProductDetails = () => {
   const { id } = useParams<{ id: string }>();

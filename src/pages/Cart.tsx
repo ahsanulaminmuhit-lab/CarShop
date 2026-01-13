@@ -6,7 +6,6 @@ import {
 } from "@/redux/features/cart/cartSlice";
 import {  useState } from "react";
 import {  useNavigate } from "react-router-dom";
-import { useAuth } from "@/hooks/useAuth";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -26,7 +25,8 @@ import {
   FaCreditCard,
 } from "react-icons/fa";
 import { toast } from "react-hot-toast";
-import { LoadingOverlay } from "@/components/ui/loading-overlay";
+import { LoadingOverlay } from "@/components/ui/loading-Overlay";
+import { useAuth } from "@/hooks/useAuth";
 
 // Use environment variable for the Stripe publishable key
 
