@@ -14,12 +14,12 @@ import {
 import { useAuth } from "@/hooks/useAuth";
 
 interface AuthFormProps {
-  mode: "signin" | "signup";
+  mode: "Signin" | "Signup";
 }
 
 export function AuthForm({ mode }: AuthFormProps) {
   const navigate = useNavigate();
-  const { login, signup } = useAuth();
+  const { login, Signup } = useAuth();
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
@@ -47,10 +47,10 @@ export function AuthForm({ mode }: AuthFormProps) {
         await login(formData.email, formData.password);
         navigate("/");
       } else {
-        await signup(formData.email, formData.password, formData.name);
-        setSuccess("Account created successfully! You can now sign in.");
+        await Signup(formData.email, formData.password, formData.name);
+        setSuccess("Account created successfully! You can now Sign in.");
         setTimeout(() => {
-          navigate("/signin");
+          navigate("/Signin");
         }, 2000);
       }
     } catch (err: any) {
@@ -64,10 +64,10 @@ export function AuthForm({ mode }: AuthFormProps) {
     <Card className="w-[350px]">
       <CardHeader>
         <CardTitle>
-          {mode === "signin" ? "Sign In" : "Create Account"}
+          {mode === "Signin" ? "Sign In" : "Create Account"}
         </CardTitle>
         <CardDescription>
-          {mode === "signin"
+          {mode === "Signin"
             ? "Enter your email below to sign in to your account"
             : "Enter your information below to create your account"}
         </CardDescription>
@@ -125,12 +125,12 @@ export function AuthForm({ mode }: AuthFormProps) {
           <Button className="w-full" type="submit" disabled={isLoading}>
             {isLoading
               ? "Loading..."
-              : mode === "signin"
+              : mode === "Signin"
               ? "Sign In"
               : "Create Account"}
           </Button>
           <div className="text-sm text-center">
-            {mode === "signin" ? (
+            {mode === "Signin" ? (
               <>
                 Don't have an account?{" "}
                 <a href="/signup" className="text-blue-500 hover:underline">
@@ -140,7 +140,7 @@ export function AuthForm({ mode }: AuthFormProps) {
             ) : (
               <>
                 Already have an account?{" "}
-                <a href="/signin" className="text-blue-500 hover:underline">
+                <a href="/Signin" className="text-blue-500 hover:underline">
                   Sign in
                 </a>
               </>
