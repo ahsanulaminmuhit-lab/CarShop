@@ -10,7 +10,7 @@ const ErrorPage = () => {
         <p className="text-xl text-gray-600 mb-8">
           {error?.statusText ||
             error?.message ||
-            "Sorry, an unexpected error occurred."}
+            "Sorry, an unexpected error Occurred."}
         </p>
         <Link to="/" className="text-blue-600 hover:text-blue-800">
           Go back home
