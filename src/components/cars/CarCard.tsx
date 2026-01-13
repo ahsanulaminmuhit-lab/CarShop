@@ -8,7 +8,7 @@ export default function CarCard() {
       console.log(data?.data,);
     return (
 
-    <div className="flex flex-wrap gap-4 justify-center mt-4">   
+    <div className="flex flex-wrap gap-4 justify-Center mt-4">   
             {
                 data?.data?.map((data:any) => (
                     <Card className="w-full max-w-xs rounded-lg border border-gray-200 bg-white shadow-md hover:shadow-lg transition-all ease-in-out duration-300">
