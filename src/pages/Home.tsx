@@ -18,7 +18,7 @@ const bannerSlides = [
   {
     image: "/hero-1.jpg",
     title: "Find Your Dream Car",
-    description: "Browse through our extensive collection of premium vehicles",
+    description: "Browse through our extensive collection of premium Vehicles",
   },
   {
     image: "/hero-2.jpg",
