@@ -29,7 +29,7 @@ const AllProducts = () => {
   const [UnAvailability, setUnAvailability] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
 
-  // Filtered data
+  // Filtered Data
   const filteredCars = cardata?.filter((car: any) => {
     const matchesPrice =
       car.price >= priceRange[0] && car.price <= priceRange[1];

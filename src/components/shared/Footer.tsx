@@ -12,7 +12,7 @@ const Footer = () => {
           <div>
             <h2  className="font-semibold text-2xl mb-4">Drive<span className="text-amber-600">Lux</span></h2>
             <p className="text-gray-400">
-              Your trusted destination for quality used and new cars. Find your
+              Your trusted destination for quality used and new Cars. Find your
               perfect ride today.
             </p>
           </div>

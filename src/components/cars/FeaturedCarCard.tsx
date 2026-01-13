@@ -22,7 +22,7 @@ const FeaturedCarCard = ({ car, onViewDetails }: FeaturedCarCardProps) => {
   };
 
   return (
-    <Card className="overflow-hidden hover:shadow-lg transition-shadow cursor-pointer">
+    <Card className="overflow-hidden hover:shadow-lg transition-Shadow cursor-pointer">
       <div
         className="aspect-video relative overflow-hidden"
         onClick={handleViewDetails}
